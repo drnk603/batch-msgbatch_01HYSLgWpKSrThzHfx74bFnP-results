@@ -37,7 +37,7 @@
       "'": '&#x27;',
       '/': '&#x2F;'
     };
-    return String(str).replace(/[&<>"'/]/g, char => map[char]);
+    return String(str).replace(/[&<>"'\/]/g, char => map[char]);
   }
 
   function showNotification(message, type = 'info') {
